@@ -233,7 +233,7 @@ class InputWithOptions extends Component {
         onKeyDown={this._onKeyDown}
         onClickOutside={this.onClickOutside}
         shown={this.isDropdownLayoutVisible()}
-        excludeClass={styles.root}
+        excludeClass={classes.root}
       >
         <Popover.Element>
           <div data-input-parent className={this.inputClasses()}>

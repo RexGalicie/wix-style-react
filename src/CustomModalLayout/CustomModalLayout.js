@@ -29,9 +29,13 @@ class CustomModalLayout extends React.PureComponent {
   };
 
   render() {
-    const { width, dataHook } = this.props;
+    const { width, dataHook, className } = this.props;
     return (
-      <div className={st(classes.root)} data-hook={dataHook} style={{ width }}>
+      <div
+        className={st(classes.root, className)}
+        data-hook={dataHook}
+        style={{ width }}
+      >
         <BaseModalLayout {...this.props}></BaseModalLayout>
       </div>
     );

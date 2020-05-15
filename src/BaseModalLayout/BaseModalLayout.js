@@ -48,6 +48,7 @@ class BaseModalLayout extends React.PureComponent {
     sideActions: PropTypes.node,
     /** the children / content of the modal */
     children: PropTypes.node.isRequired,
+    className: PropTypes.string,
   };
 
   static defaultProps = {
@@ -136,13 +137,14 @@ class BaseModalLayout extends React.PureComponent {
       footnote,
       onCloseButtonClick,
       linkText,
+      className,
     } = this.props;
 
     const hasFooter =
       sideActions || primaryButtonText || secondaryButtonText || linkText;
 
     return (
-      <div className={st(classes.root, { removeContentPadding })}>
+      <div className={st(classes.root, { removeContentPadding }, className)}>
         {title && this._renderHeaderLayout()}
         {children && <div className={classes.contentWrapper}>{children}</div>}
         {hasFooter && this._renderFooterLayout()}
