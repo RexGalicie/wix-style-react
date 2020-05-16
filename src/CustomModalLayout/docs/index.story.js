@@ -40,6 +40,9 @@ export default {
     sideActions: <Checkbox>Check</Checkbox>,
     footnote: 'footnote text',
   },
+
+  hiddenProps: ['dataHook', 'className'],
+
   component: CustomModalLayout,
   componentPath: '..',
 

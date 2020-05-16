@@ -40,4 +40,6 @@ export default {
       },
     ],
   },
+
+  hiddenProps: ['dataHook', 'className'],
 };

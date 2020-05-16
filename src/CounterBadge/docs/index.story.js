@@ -6,7 +6,6 @@ import {
   description,
   importExample,
   title,
-  columns,
   divider,
   example as baseExample,
   playground,
@@ -42,6 +41,8 @@ export default {
       { label: 'node', value: <Star /> },
     ],
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({

@@ -35,6 +35,8 @@ export default {
     </Box>
   ),
 
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     header(),
 

@@ -36,13 +36,15 @@ export default {
   componentPath: '..',
 
   componentProps: {
-    dataHook: storySettings.dataHook,
     placeholder: 'This is a placeholder',
     options,
   },
+
   exampleProps: {
     options: [{ label: 'simple', value: options }],
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({

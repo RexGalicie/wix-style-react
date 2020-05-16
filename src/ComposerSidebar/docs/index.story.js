@@ -41,6 +41,8 @@ export default {
     selectedId: [{ label: '0', value: 0 }, 1, 2, 3],
   },
 
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     header({
       sourceUrl: `https://github.com/wix/wix-style-react/tree/master/src/${ComposerSidebar.displayName}/`,
