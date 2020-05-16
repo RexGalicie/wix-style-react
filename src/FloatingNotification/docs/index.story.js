@@ -42,7 +42,6 @@ export default {
   componentPath: '..',
 
   componentProps: {
-    dataHook: storySettings.dataHook,
     type: TYPES.standard,
     text: 'Some content text',
     showCloseButton: true,
@@ -57,6 +56,8 @@ export default {
     textButtonProps: textButtonPropsExamples,
     buttonProps: buttonPropsExamples,
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     tab({
@@ -93,9 +94,9 @@ export default {
     }),
 
     ...[
-      { title: 'Playground', sections: [playground()] },
       { title: 'API', sections: [api()] },
       { title: 'Testkit', sections: [testkit()] },
+      { title: 'Playground', sections: [playground()] },
     ].map(tab),
   ],
 };

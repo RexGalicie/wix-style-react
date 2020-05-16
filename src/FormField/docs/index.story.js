@@ -93,7 +93,6 @@ export default {
   componentPath: '..',
 
   componentProps: {
-    dataHook: 'storybook-formfield',
     children: childrenExamples[0].value,
     label: 'This is an input:',
     labelPlacement: 'top',
@@ -108,6 +107,8 @@ export default {
     children: childrenExamples,
     infoTooltipProps: commonTooltipPropsExample,
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({
