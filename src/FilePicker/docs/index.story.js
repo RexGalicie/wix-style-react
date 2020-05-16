@@ -20,6 +20,8 @@ export default {
     onChange: file => file.name,
   },
 
+  hiddenProps: ['dataHook', 'className'],
+
   examples: (
     <div style={{ marginBottom: '100px' }}>
       <div style={{ marginBottom: '30px' }}>

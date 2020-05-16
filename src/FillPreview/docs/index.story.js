@@ -30,12 +30,18 @@ export default {
   component: FillPreview,
   componentPath: '..',
 
-  componentProps: {},
+  componentProps: {
+    fill: null,
+    selected: false,
+    disabled: false,
+  },
 
   exampleProps: {
     // Put here presets of props, for more info:
     // https://github.com/wix/wix-ui/blob/master/packages/wix-storybook-utils/docs/usage.md#using-list
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({

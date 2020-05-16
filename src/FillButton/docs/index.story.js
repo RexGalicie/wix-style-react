@@ -21,6 +21,7 @@ import Box from '../../Box';
 import * as examples from './examples';
 
 import FillButton from '..';
+import { commonTooltipPropsExample } from '../../../stories/utils/playgroundUtils';
 
 const code = config => baseCode({ components: allComponents, ...config });
 
@@ -34,7 +35,15 @@ export default {
   componentProps: {
     fill: '',
     tooltipContent: 'hello there',
+    disabled: false,
+    iconSize: 'small',
   },
+
+  exampleProps: {
+    tooltipProps: commonTooltipPropsExample,
+  },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({
