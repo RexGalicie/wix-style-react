@@ -8,7 +8,6 @@ import {
   description,
   divider,
   importExample,
-  columns,
   header,
   title,
   example as baseExample,
@@ -71,6 +70,8 @@ export default {
       },
     ],
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({

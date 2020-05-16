@@ -25,5 +25,8 @@ export default {
   componentPath: '..',
 
   componentProps: { children: exampleChildren[0].value, open: true },
+
   exampleProps: { children: exampleChildren },
+
+  hiddenProps: ['dataHook', 'className'],
 };
