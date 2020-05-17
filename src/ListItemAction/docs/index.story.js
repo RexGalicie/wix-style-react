@@ -41,6 +41,8 @@ export default {
     prefixIcon: icons,
   },
 
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     header({
       title: 'ListItemAction',

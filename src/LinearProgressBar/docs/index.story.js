@@ -36,7 +36,10 @@ export default {
     light: false,
     error: false,
     showProgressIndication: false,
+    skin: 'standard',
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({
