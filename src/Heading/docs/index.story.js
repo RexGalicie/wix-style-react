@@ -20,10 +20,11 @@ export default {
   componentProps: {
     children: 'Hey there, good looking',
     light: false,
-    dataHook: 'storybook-heading',
     appearance: 'H1',
     ellipsis: false,
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   examples: (
     <div>

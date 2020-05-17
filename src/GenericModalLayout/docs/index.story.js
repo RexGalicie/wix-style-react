@@ -24,6 +24,8 @@ export default {
     fullscreen: false,
   },
 
+  hiddenProps: ['dataHook', 'className'],
+
   examples: (
     <div>
       <CodeExample title="Default" code={ExampleStandardRaw}>

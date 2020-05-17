@@ -6,7 +6,6 @@ import {
   description,
   importExample,
   title,
-  columns,
   divider,
   example as baseExample,
   playground,
@@ -29,13 +28,12 @@ export default {
   componentPath: '..',
 
   componentProps: {
-    dataHook: storySettings.dataHook,
     title: 'Site Name | a title of your site',
     previewUrl: 'www.site-name.com',
     description: 'A short description for a site',
   },
 
-  hiddenProps: ['dataHook'],
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({

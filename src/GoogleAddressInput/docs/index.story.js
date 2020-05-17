@@ -42,13 +42,14 @@ export default {
     <GoogleAPILoader>{component}</GoogleAPILoader>
   ),
   componentProps: setProps => ({
-    dataHook: storySettings.dataHook,
     Client: clients.GoogleMapsClient,
     value: '',
     onChange: e => setProps({ value: e.target.value }),
     onSet: e => setProps({ value: e.originValue }),
     placeholder: 'Enter Address...',
   }),
+
+  hiddenProps: ['dataHook', 'className'],
 
   examples: (
     <GoogleAPILoader>
