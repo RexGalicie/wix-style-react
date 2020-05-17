@@ -120,7 +120,7 @@ export default {
     footer: footerExamples,
   },
 
-  hiddenProps: ['dataHook'],
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({

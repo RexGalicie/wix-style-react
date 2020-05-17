@@ -6,7 +6,6 @@ import {
   description,
   importExample,
   title,
-  columns,
   divider,
   example as baseExample,
   playground,
@@ -55,6 +54,7 @@ export default {
     hoverSkin: 'dark',
     media: 'example.jpg',
     children: galleryItemWithHoverActions,
+    hovered: false,
   },
 
   exampleProps: {
@@ -65,6 +65,8 @@ export default {
       },
     ],
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   componentWrapper: ({ component }) => (
     <Proportion aspectRatio={Proportion.PREDEFINED_RATIOS.landscape}>

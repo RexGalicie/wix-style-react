@@ -35,7 +35,6 @@ function createTag({ countryName, countryCode }) {
 
 export default {
   componentProps: (setState, getState) => ({
-    dataHook: storySettings.dataHook,
     value: '',
     tags: [],
     options,
@@ -70,4 +69,6 @@ export default {
         tags: getState().tags.filter(currTag => currTag.id !== tagId),
       }),
   }),
+
+  hiddenProps: ['dataHook', 'className'],
 };

@@ -51,6 +51,8 @@ export default {
     actions,
   },
 
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     header(),
 

@@ -80,6 +80,8 @@ export default {
     children: childrenNodesExamples,
   },
 
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     header(),
 

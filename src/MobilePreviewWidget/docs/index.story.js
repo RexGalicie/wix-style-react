@@ -67,11 +67,14 @@ export default {
   componentProps: {
     dataHook: '',
     children: childrenNodesExamples[0].value,
+    skin: 'neutral',
   },
 
   exampleProps: {
     children: childrenNodesExamples,
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({

@@ -58,6 +58,8 @@ export default {
     ),
   }),
 
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     header(),
 
