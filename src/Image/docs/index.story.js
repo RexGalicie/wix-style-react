@@ -54,6 +54,8 @@ export default {
     ],
   },
 
+  hiddenProps: ['dataHook', 'className'],
+
   componentWrapper: ({ component }) => <Box align="center">{component}</Box>,
 
   sections: [

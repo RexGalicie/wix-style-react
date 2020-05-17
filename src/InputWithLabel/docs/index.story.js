@@ -68,6 +68,8 @@ export default {
     ],
   },
 
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     header({
       component: <InputWithLabel label="Full Name" />,

@@ -44,7 +44,6 @@ export default {
   componentPath: '..',
 
   componentProps: {
-    dataHook: 'story-image-viewer',
     imageUrl: exampleImageUrl[0].value,
   },
 
@@ -55,6 +54,8 @@ export default {
     onRemoveImage: () => 'onRemoveImage',
     tooltipProps: [{ label: 'from left', value: { placement: 'left' } }],
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({

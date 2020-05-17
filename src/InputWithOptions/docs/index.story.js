@@ -27,5 +27,8 @@ export default {
   componentProps: {
     options,
   },
+
   exampleProps: {},
+
+  hiddenProps: ['dataHook', 'className'],
 };

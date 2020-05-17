@@ -30,7 +30,6 @@ export default {
   componentPath: '..',
 
   componentProps: {
-    dataHook: storySettings.dataHook,
     status: undefined,
     hasCounter: false,
     resizable: false,
@@ -54,6 +53,8 @@ export default {
       },
     ],
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   examples: (
     <div>

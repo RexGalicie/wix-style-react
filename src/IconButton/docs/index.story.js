@@ -42,10 +42,12 @@ export default {
     disabled: false,
   },
   exampleProps: {
-    onClick: () => 'Clicked!',
+    onClick: () => 'I was called!',
     children: icons,
     as: ['button', 'a', 'span', 'div'],
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({
