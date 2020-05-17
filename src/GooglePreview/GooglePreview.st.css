@@ -25,8 +25,9 @@
   display: block;
 }
 
-.googlePreviewTitle:size(medium) {
+.googlePreviewTitle:size(medium):weight(bold) {
   color: value(googlePreivewBlue);
+  font-family: Arial; 
 }
 
 .googlePreviewUrl {
@@ -34,8 +35,9 @@
   display: block;
 }
 
-.googlePreviewUrl:size(tiny) {
+.googlePreviewUrl:size(tiny):weight(thin) {
   color: value(googlePreivewGreen);
+  font-family: Arial;
 }
 
 .googlePreviewDescriptionContainer {
@@ -50,7 +52,8 @@
   -st-extends: Text;
 }
 
-.googlePreviewDescription:size(tiny) {
+.googlePreviewDescription:size(tiny):weight(thin) {
   color: value(D20);
+  font-family: Arial;
 }
 
