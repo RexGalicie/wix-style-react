@@ -49,7 +49,6 @@ const inputsChildren = [
 ];
 
 const componentProps = {
-  dataHook: storySettings.dataHook,
   children: datePickerChildren,
 };
 
@@ -73,6 +72,8 @@ export default {
   componentPath: '..',
   componentProps,
   exampleProps,
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({

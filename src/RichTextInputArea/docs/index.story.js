@@ -34,7 +34,6 @@ export default {
   componentPath: '..',
 
   componentProps: () => ({
-    dataHook: storySettings.dataHook,
     initialValue: '',
     placeholder: 'Default text goes here',
     onChange: value => value,
@@ -43,6 +42,8 @@ export default {
   exampleProps: {
     onChange: value => value,
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({

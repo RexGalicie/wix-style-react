@@ -93,7 +93,6 @@ export default {
     hasError: false,
     children: exampleChildren[0].value,
     onChange: value => setState({ value }),
-    dataHook: storySettings.dataHook,
   }),
 
   exampleProps: {
@@ -101,6 +100,8 @@ export default {
     children: exampleChildren,
     onChange: value => value,
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({
