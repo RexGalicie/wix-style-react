@@ -43,7 +43,6 @@ export default {
   componentPath: '..',
 
   componentProps: {
-    dataHook: 'preview-story',
     skin: skins.neutral,
     contentOutline: contentOutlines.shadow,
     backgroundColor: '',
@@ -51,6 +50,8 @@ export default {
     width: '100%',
     children: childNode,
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({

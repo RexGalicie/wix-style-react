@@ -31,7 +31,6 @@ export default {
   componentPath: '..',
 
   componentProps: {
-    dataHook: storySettings.dataHook,
     children: (
       <img
         src={IMG_URL}
@@ -45,6 +44,8 @@ export default {
   exampleProps: {
     aspectRatio: exampleAspectRatio,
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   examples: (
     <div style={{ maxWidth: 627, paddingBottom: 60 }}>

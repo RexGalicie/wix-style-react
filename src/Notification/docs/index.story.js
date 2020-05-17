@@ -80,6 +80,8 @@ export default {
     children: exampleChildren,
   },
 
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     tab({
       title: 'Description',
@@ -116,9 +118,9 @@ export default {
     }),
 
     ...[
-      { title: 'Playground', sections: [playground()] },
       { title: 'API', sections: [api()] },
       { title: 'Testkit', sections: [testkit()] },
+      { title: 'Playground', sections: [playground()] },
     ].map(tab),
   ],
 };

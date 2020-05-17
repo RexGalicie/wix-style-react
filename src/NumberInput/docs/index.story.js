@@ -28,6 +28,8 @@ export default {
     max: 5,
   },
 
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     header({
       issueUrl: 'https://github.com/wix/wix-style-react/issues/new',
