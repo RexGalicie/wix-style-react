@@ -3,7 +3,6 @@ import { storySettings } from './storySettings';
 import {
   api,
   example as baseExample,
-  columns,
   description,
   divider,
   header,
@@ -50,7 +49,6 @@ export default {
   componentPath: '..',
 
   componentProps: {
-    dataHook: 'storybook-sectionhelper',
     actionText: 'I understand the consequences',
     appearance: 'standard',
     title: titleExamples[0].value,
@@ -63,9 +61,11 @@ export default {
     title: titleExamples,
     children: childrenExamples,
 
-    onAction: () => 'onAction',
-    onClose: () => 'onClose',
+    onAction: () => 'I was called!',
+    onClose: () => 'I was called!',
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({
