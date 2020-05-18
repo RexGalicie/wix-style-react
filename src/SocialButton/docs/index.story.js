@@ -39,6 +39,8 @@ export default {
     icon: icons,
   },
 
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     header({
       sourceUrl:

@@ -71,6 +71,8 @@ export default {
     children: childrenExamples,
   },
 
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     header(),
 

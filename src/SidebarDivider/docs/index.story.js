@@ -28,6 +28,8 @@ export default {
   component: SidebarDivider,
   componentPath: '..',
 
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     header(),
 

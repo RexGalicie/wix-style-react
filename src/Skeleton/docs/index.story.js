@@ -65,12 +65,13 @@ export default {
 
   componentProps: {
     content: exampleContent[0].value,
-    dataHook: 'storybook-skeleton',
   },
 
   exampleProps: {
     content: exampleContent,
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({

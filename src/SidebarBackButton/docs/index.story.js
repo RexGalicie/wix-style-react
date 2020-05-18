@@ -31,6 +31,8 @@ export default {
     children: 'Go back',
   },
 
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     header(),
 

@@ -47,6 +47,8 @@ export default {
     media: mediaNode,
   },
 
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     header({
       issueUrl: 'https://github.com/wix/wix-style-react/issues/new',

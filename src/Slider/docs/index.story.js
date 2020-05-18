@@ -53,6 +53,8 @@ export default {
     onChange: value => setProps({ value }),
   }),
 
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     header({
       component: <SlideWithState />,

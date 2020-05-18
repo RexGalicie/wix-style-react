@@ -42,6 +42,8 @@ export default {
   component: StatisticsWidget,
   componentPath: '..',
 
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     header(),
 

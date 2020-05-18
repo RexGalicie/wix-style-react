@@ -52,6 +52,8 @@ export default {
     ),
   },
 
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     header({
       component: <SidePanel buttonText="Click me!" />,
