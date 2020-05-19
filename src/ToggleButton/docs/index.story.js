@@ -46,11 +46,14 @@ export default {
     labelPlacement: 'tooltip',
     tooltipProps: { placement: 'top' },
   },
+
   exampleProps: {
     onClick: () => 'Clicked!',
     children: icons,
     as: ['button', 'a', 'span', 'div'],
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({

@@ -29,6 +29,8 @@ export default {
     size: 'medium',
   },
 
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     header({
       sourceUrl:

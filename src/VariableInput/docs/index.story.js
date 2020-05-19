@@ -34,6 +34,8 @@ export default {
     variableParser: value => (value === 'page.name' ? 'Page name' : false),
   },
 
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     header({
       component: (

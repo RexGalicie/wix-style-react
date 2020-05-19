@@ -38,7 +38,6 @@ export default {
   componentPath: '../Thumbnail.js',
 
   componentProps: (setState, getState) => ({
-    dataHook: storySettings.dataHook,
     title: 'I am a Thumbnail',
     description: 'And I can do this and that',
     image: examples.image,
@@ -47,6 +46,8 @@ export default {
     hideSelectedIcon: false,
     onClick: () => setState({ selected: !getState().selected }),
   }),
+
+  hiddenProps: ['dataHook', 'className'],
 
   exampleProps: {
     onClick: () => 'Thumbnail Clicked',

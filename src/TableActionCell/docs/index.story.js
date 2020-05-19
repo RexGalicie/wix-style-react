@@ -102,7 +102,6 @@ export default {
   componentPath: '..',
 
   componentProps: {
-    dataHook: storySettings.dataHook,
     primaryAction: primaryActionOptions1,
     secondaryActions: secondaryActionsOption,
     numOfVisibleSecondaryActions: 2,
@@ -120,6 +119,8 @@ export default {
       { label: '4 secondary actions', value: secondaryActionsOption },
     ],
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   examples: (
     <div {...style('root')}>

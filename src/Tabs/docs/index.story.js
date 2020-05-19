@@ -27,9 +27,9 @@ import Tabs from '../Tabs';
 export default {
   category: storySettings.category,
   storyName: storySettings.storyName,
-
   component: createAutoExampleWrapper(Tabs),
   componentPath: '..',
+
   componentProps: setProps => ({
     onClick: value => setProps({ activeId: value.id }),
     activeId: '1',
@@ -39,6 +39,9 @@ export default {
       title: `item ${index}`,
     })),
   }),
+
+  hiddenProps: ['dataHook', 'className'],
+
   sections: [
     header({
       component: <TabsHeaderExample />,

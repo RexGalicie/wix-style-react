@@ -34,7 +34,6 @@ export default {
   componentProps: {
     children: 'Some text',
     light: false,
-    dataHook: 'storybook-text',
     size: SIZES.medium,
     secondary: false,
     skin: SKINS.standard,
@@ -42,6 +41,8 @@ export default {
     tagName: 'span',
     ellipsis: false,
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({

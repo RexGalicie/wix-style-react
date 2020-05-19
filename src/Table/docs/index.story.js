@@ -78,7 +78,6 @@ export default {
   componentPath: '..',
 
   componentProps: {
-    dataHook: storySettings.dataHook,
     id: 'id',
     data,
     columns: columnsOption1,
@@ -95,6 +94,8 @@ export default {
       { label: '40 rows', value: dataLong },
     ],
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({

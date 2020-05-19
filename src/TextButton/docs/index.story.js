@@ -41,6 +41,7 @@ export default {
     size: 'medium',
     disabled: false,
   },
+
   exampleProps: {
     onClick: () => 'Clicked!',
     prefixIcon: icons,
@@ -48,6 +49,8 @@ export default {
     as: ['button', 'a', 'span', 'div'],
     skin: ['standard', 'destructive', 'light', 'premium', 'dark'],
   },
+
+  hiddenProps: ['dataHook', 'className'],
 
   sections: [
     header({
