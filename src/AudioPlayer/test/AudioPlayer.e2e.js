@@ -218,7 +218,7 @@ describe('AudioPlayer', () => {
     });
   });
 
-  describe('Lazy Load', () => {
+  describe('preload = none', () => {
     beforeEach(async () => {
       await navigateToTestUrl(testStories.audioPlayerLazyLoad);
 
