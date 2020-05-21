@@ -61,6 +61,7 @@ storiesOf(kind, module).add(testStories.audioPlayerLazyLoad, () => {
       dataHook={storySettings.dataHookLazyLoad}
       src="https://music.wixstatic.com/preview/84770f_29a80480c24f4946a477c8ad03b92cbc-128.mp3"
       preload="none"
+      webAudioAPI
     />
   );
 });
